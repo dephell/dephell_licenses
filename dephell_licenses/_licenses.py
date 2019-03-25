@@ -21,3 +21,11 @@ class Licenses:
         for license in self.all:
             if license.id == name:
                 return license
+
+    def get_by_name(self, name):
+        for license in self.all:
+            if license.name == name:
+                return license
+        for license in self.all:
+            if license.classifier.split(' :: ')[-1] == name:
+                return license
