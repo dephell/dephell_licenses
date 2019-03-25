@@ -56,8 +56,10 @@ def get_by_id(name):
 
 
 licenses = []
-for classifier in tqdm([c for c in classifiers if c.strip().startswith('License :: ')]):
+for classifier in classifiers:
     classifier = classifier.strip()
+    if not classifier.strip().startswith('License :: '):
+        continue
     name = classifier.split('::')[-1].strip()
 
     best_license = get_by_id(name)
@@ -66,6 +68,11 @@ for classifier in tqdm([c for c in classifiers if c.strip().startswith('License 
     if best_license is None:
         best_license = get_by_fullname(name)
     if best_license is None:
+        continue
+
+    print(name, '|', best_license['licenseId'], '.', best_license['name'])
+    if input('same? > ').strip():
+        print('skipped')
         continue
 
     licenses.append(dict(

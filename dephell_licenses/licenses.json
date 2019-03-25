@@ -44,17 +44,6 @@
     "url": "http://spdx.org/licenses/CECILL-C.json"
   },
   {
-    "approved": false,
-    "classifier": "License :: DFSG approved",
-    "deprecated": false,
-    "id": "DSDP",
-    "links": [
-      "https://fedoraproject.org/wiki/Licensing/DSDP"
-    ],
-    "name": "DSDP License",
-    "url": "http://spdx.org/licenses/DSDP.json"
-  },
-  {
     "approved": true,
     "classifier": "License :: Eiffel Forum License (EFL)",
     "deprecated": false,
@@ -65,29 +54,6 @@
     ],
     "name": "Eiffel Forum License v1.0",
     "url": "http://spdx.org/licenses/EFL-1.0.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: Free For Educational Use",
-    "deprecated": false,
-    "id": "FTL",
-    "links": [
-      "http://freetype.fis.uniroma2.it/FTL.TXT",
-      "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
-    ],
-    "name": "Freetype Project License",
-    "url": "http://spdx.org/licenses/FTL.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: Free For Home Use",
-    "deprecated": false,
-    "id": "Crossword",
-    "links": [
-      "https://fedoraproject.org/wiki/Licensing/Crossword"
-    ],
-    "name": "Crossword License",
-    "url": "http://spdx.org/licenses/Crossword.json"
   },
   {
     "approved": false,
@@ -102,74 +68,6 @@
     "url": "http://spdx.org/licenses/FTL.json"
   },
   {
-    "approved": false,
-    "classifier": "License :: Freely Distributable",
-    "deprecated": false,
-    "id": "FTL",
-    "links": [
-      "http://freetype.fis.uniroma2.it/FTL.TXT",
-      "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
-    ],
-    "name": "Freetype Project License",
-    "url": "http://spdx.org/licenses/FTL.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: Free To Use But Restricted",
-    "deprecated": false,
-    "id": "OGL-UK-1.0",
-    "links": [
-      "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/"
-    ],
-    "name": "Open Government Licence v1.0",
-    "url": "http://spdx.org/licenses/OGL-UK-1.0.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: Freeware",
-    "deprecated": false,
-    "id": "Beerware",
-    "links": [
-      "https://fedoraproject.org/wiki/Licensing/Beerware",
-      "https://people.freebsd.org/~phk/"
-    ],
-    "name": "Beerware License",
-    "url": "http://spdx.org/licenses/Beerware.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: GUST Font License 1.0",
-    "deprecated": false,
-    "id": "Crossword",
-    "links": [
-      "https://fedoraproject.org/wiki/Licensing/Crossword"
-    ],
-    "name": "Crossword License",
-    "url": "http://spdx.org/licenses/Crossword.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: GUST Font License 2006-09-30",
-    "deprecated": false,
-    "id": "Crossword",
-    "links": [
-      "https://fedoraproject.org/wiki/Licensing/Crossword"
-    ],
-    "name": "Crossword License",
-    "url": "http://spdx.org/licenses/Crossword.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: Netscape Public License (NPL)",
-    "deprecated": false,
-    "id": "NRL",
-    "links": [
-      "http://web.mit.edu/network/isakmp/nrllicense.html"
-    ],
-    "name": "NRL License",
-    "url": "http://spdx.org/licenses/NRL.json"
-  },
-  {
     "approved": true,
     "classifier": "License :: Nokia Open Source License (NOKOS)",
     "deprecated": false,
@@ -179,40 +77,6 @@
     ],
     "name": "Nokia Open Source License",
     "url": "http://spdx.org/licenses/Nokia.json"
-  },
-  {
-    "approved": true,
-    "classifier": "License :: OSI Approved",
-    "deprecated": false,
-    "id": "ISC",
-    "links": [
-      "https://www.isc.org/downloads/software-support-policy/isc-license/",
-      "https://opensource.org/licenses/ISC"
-    ],
-    "name": "ISC License",
-    "url": "http://spdx.org/licenses/ISC.json"
-  },
-  {
-    "approved": true,
-    "classifier": "License :: OSI Approved :: Academic Free License (AFL)",
-    "deprecated": false,
-    "id": "AAL",
-    "links": [
-      "https://opensource.org/licenses/attribution"
-    ],
-    "name": "Attribution Assurance License",
-    "url": "http://spdx.org/licenses/AAL.json"
-  },
-  {
-    "approved": true,
-    "classifier": "License :: OSI Approved :: Apache Software License",
-    "deprecated": false,
-    "id": "VSL-1.0",
-    "links": [
-      "https://opensource.org/licenses/VSL-1.0"
-    ],
-    "name": "Vovida Software License v1.0",
-    "url": "http://spdx.org/licenses/VSL-1.0.json"
   },
   {
     "approved": true,
@@ -258,18 +122,6 @@
     ],
     "name": "Boost Software License 1.0",
     "url": "http://spdx.org/licenses/BSL-1.0.json"
-  },
-  {
-    "approved": true,
-    "classifier": "License :: OSI Approved :: BSD License",
-    "deprecated": false,
-    "id": "ISC",
-    "links": [
-      "https://www.isc.org/downloads/software-support-policy/isc-license/",
-      "https://opensource.org/licenses/ISC"
-    ],
-    "name": "ISC License",
-    "url": "http://spdx.org/licenses/ISC.json"
   },
   {
     "approved": true,
@@ -406,18 +258,6 @@
   },
   {
     "approved": false,
-    "classifier": "License :: OSI Approved :: GNU Free Documentation License (FDL)",
-    "deprecated": false,
-    "id": "FTL",
-    "links": [
-      "http://freetype.fis.uniroma2.it/FTL.TXT",
-      "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
-    ],
-    "name": "Freetype Project License",
-    "url": "http://spdx.org/licenses/FTL.json"
-  },
-  {
-    "approved": false,
     "classifier": "License :: OSI Approved :: GNU General Public License (GPL)",
     "deprecated": true,
     "id": "GPL-1.0",
@@ -524,17 +364,6 @@
   },
   {
     "approved": true,
-    "classifier": "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
-    "deprecated": false,
-    "id": "NGPL",
-    "links": [
-      "https://opensource.org/licenses/NGPL"
-    ],
-    "name": "Nethack General Public License",
-    "url": "http://spdx.org/licenses/NGPL.json"
-  },
-  {
-    "approved": true,
     "classifier": "License :: OSI Approved :: IBM Public License",
     "deprecated": false,
     "id": "IPL-1.0",
@@ -568,17 +397,6 @@
     "url": "http://spdx.org/licenses/ISC.json"
   },
   {
-    "approved": false,
-    "classifier": "License :: OSI Approved :: Jabber Open Source License",
-    "deprecated": false,
-    "id": "SCEA",
-    "links": [
-      "http://research.scea.com/scea_shared_source_license.html"
-    ],
-    "name": "SCEA Shared Source License",
-    "url": "http://spdx.org/licenses/SCEA.json"
-  },
-  {
     "approved": true,
     "classifier": "License :: OSI Approved :: MirOS License (MirOS)",
     "deprecated": false,
@@ -599,17 +417,6 @@
     ],
     "name": "MIT License",
     "url": "http://spdx.org/licenses/MIT.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: OSI Approved :: MITRE Collaborative Virtual Workspace License (CVW)",
-    "deprecated": false,
-    "id": "BSD-4-Clause-UC",
-    "links": [
-      "http://www.freebsd.org/copyright/license.html"
-    ],
-    "name": "BSD-4-Clause (University of California-Specific)",
-    "url": "http://spdx.org/licenses/BSD-4-Clause-UC.json"
   },
   {
     "approved": true,
@@ -717,28 +524,6 @@
   },
   {
     "approved": true,
-    "classifier": "License :: OSI Approved :: Python Software Foundation License",
-    "deprecated": false,
-    "id": "VSL-1.0",
-    "links": [
-      "https://opensource.org/licenses/VSL-1.0"
-    ],
-    "name": "Vovida Software License v1.0",
-    "url": "http://spdx.org/licenses/VSL-1.0.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: OSI Approved :: Qt Public License (QPL)",
-    "deprecated": false,
-    "id": "AML",
-    "links": [
-      "https://fedoraproject.org/wiki/Licensing/Apple_MIT_License"
-    ],
-    "name": "Apple MIT License",
-    "url": "http://spdx.org/licenses/AML.json"
-  },
-  {
-    "approved": true,
     "classifier": "License :: OSI Approved :: Ricoh Source Code Public License",
     "deprecated": false,
     "id": "RSCPL",
@@ -830,17 +615,6 @@
     "url": "http://spdx.org/licenses/VSL-1.0.json"
   },
   {
-    "approved": false,
-    "classifier": "License :: OSI Approved :: W3C License",
-    "deprecated": false,
-    "id": "DOC",
-    "links": [
-      "http://www.cs.wustl.edu/~schmidt/ACE-copying.html"
-    ],
-    "name": "DOC License",
-    "url": "http://spdx.org/licenses/DOC.json"
-  },
-  {
     "approved": true,
     "classifier": "License :: OSI Approved :: X.Net License",
     "deprecated": false,
@@ -872,38 +646,5 @@
     ],
     "name": "Zope Public License 1.1",
     "url": "http://spdx.org/licenses/ZPL-1.1.json"
-  },
-  {
-    "approved": false,
-    "classifier": "License :: Other/Proprietary License",
-    "deprecated": true,
-    "id": "wxWindows",
-    "links": [
-      "https://opensource.org/licenses/WXwindows"
-    ],
-    "name": "wxWindows Library License",
-    "url": "http://spdx.org/licenses/wxWindows.json"
-  },
-  {
-    "approved": true,
-    "classifier": "License :: Public Domain",
-    "deprecated": false,
-    "id": "Multics",
-    "links": [
-      "https://opensource.org/licenses/Multics"
-    ],
-    "name": "Multics License",
-    "url": "http://spdx.org/licenses/Multics.json"
-  },
-  {
-    "approved": true,
-    "classifier": "License :: Repoze Public License",
-    "deprecated": false,
-    "id": "Naumen",
-    "links": [
-      "https://opensource.org/licenses/Naumen"
-    ],
-    "name": "Naumen Public License",
-    "url": "http://spdx.org/licenses/Naumen.json"
   }
 ]
