@@ -3,7 +3,6 @@ import requests
 import re
 from pathlib import Path
 from textdistance import hamming
-from tqdm import tqdm
 
 url = 'https://raw.githubusercontent.com/spdx/license-list-data/master/json/licenses.json'
 info = requests.get(url).json()['licenses']

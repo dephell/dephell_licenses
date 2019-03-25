@@ -80,6 +80,18 @@
   },
   {
     "approved": true,
+    "classifier": "License :: OSI Approved :: Apache Software License",
+    "deprecated": false,
+    "id": "Apache-2.0",
+    "links": [
+      "http://www.apache.org/licenses/LICENSE-2.0",
+      "https://opensource.org/licenses/Apache-2.0"
+    ],
+    "name": "Apache License 2.0",
+    "url": "http://spdx.org/licenses/Apache-2.0.json"
+  },
+  {
+    "approved": true,
     "classifier": "License :: OSI Approved :: Apple Public Source License",
     "deprecated": false,
     "id": "APSL-1.0",
@@ -122,6 +134,28 @@
     ],
     "name": "Boost Software License 1.0",
     "url": "http://spdx.org/licenses/BSL-1.0.json"
+  },
+  {
+    "approved": true,
+    "classifier": "License :: OSI Approved :: BSD License",
+    "deprecated": false,
+    "id": "BSD-2-Clause",
+    "links": [
+      "https://opensource.org/licenses/BSD-2-Clause"
+    ],
+    "name": "BSD 2-Clause \"Simplified\" License",
+    "url": "http://spdx.org/licenses/BSD-3-Clause.json"
+  },
+  {
+    "approved": true,
+    "classifier": "License :: OSI Approved :: BSD License",
+    "deprecated": false,
+    "id": "BSD-3-Clause",
+    "links": [
+      "https://opensource.org/licenses/BSD-3-Clause"
+    ],
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "url": "http://spdx.org/licenses/BSD-3-Clause.json"
   },
   {
     "approved": true,
