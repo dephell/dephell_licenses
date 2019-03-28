@@ -1,7 +1,31 @@
 # DepHell Licenses
 
-...
+## Installation
 
+Install from [PyPI](https://pypi.org/project/dephell-licenses/):
+
+```bash
+python3 -m pip install --user dephell_licenses
+```
+
+## Usage
+
+```python
+from dephell_licenses import licenses
+
+# ways to get a license:
+license = licenses.get_by_id('MIT')
+license = licenses.get_by_name('MIT License')
+license = licenses.get_by_classifier('License :: OSI Approved :: MIT License')
+
+# license object
+license
+# License(id='MIT', classifier='License :: OSI Approved :: MIT License', name='MIT License', approved=True, deprecated=False, links=['https://opensource.org/licenses/MIT'], url='http://spdx.org/licenses/MIT.json')
+
+# generate license
+license.make_text(copyright='2019 Gram')
+# 'MIT License\n\nCopyright (c) 2019 Gram\n\nPermission is hereby granted ...'
+```
 
 ## Most popular licenses
 
