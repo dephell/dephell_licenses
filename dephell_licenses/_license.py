@@ -3,7 +3,8 @@ from typing import Dict, Any, List
 
 import attr
 import requests
-from cached_property import cached_property
+
+from ._cached_property import cached_property
 
 
 # <<var;name="copyright";original="<year> <copyright holders>";match=".+">>

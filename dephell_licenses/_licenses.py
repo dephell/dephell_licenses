@@ -1,9 +1,9 @@
 import json
 import re
 from pathlib import Path
-from cached_property import cached_property
 from typing import Tuple, Dict, Optional
 
+from ._cached_property import cached_property
 from ._license import License
 
 
