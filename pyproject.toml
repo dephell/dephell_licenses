@@ -4,11 +4,23 @@ to = {format = "setuppy", path = "setup.py"}
 
 [tool.poetry]
 name = "dephell-licenses"
-version = "0.1.1"
-authors = ["orsinium"]
+version = "0.1.2"
+authors = ["Gram <master_fess@mail.ru>"]
 description = "Get info about OSS licenses"
 readme = "README.md"
+license = "MIT"
+repository = "https://github.com/dephell/dephell_licenses"
+keywords = ["dephell", "packaging", "licenses", "pypi"]
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [tool.poetry.dependencies]
 python = ">=3.5"
 attrs = "*"
+requests = "*"

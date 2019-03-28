@@ -1,7 +1,11 @@
 import re
+import textwrap
+from typing import Dict, Any, List
+
 import attr
 import requests
-from cached_property import cached_property
+
+from ._cached_property import cached_property
 
 
 # <<var;name="copyright";original="<year> <copyright holders>";match=".+">>
@@ -24,23 +28,23 @@ class License:
     approved = attr.ib(type=bool)
     deprecated = attr.ib(type=bool)
 
-    links = attr.ib(type=tuple)
+    links = attr.ib(type=List[str])
     url = attr.ib(type=str)
 
     @cached_property
-    def _details(self):
+    def _details(self) -> Dict[str, Any]:
         return requests.get(self.url).json()
 
     @property
-    def template(self):
+    def template(self) -> str:
         return self._details['standardLicenseTemplate']
 
     @property
-    def comments(self):
+    def comments(self) -> str:
         return self._details['licenseComments']
 
     @cached_property
-    def vars(self):
+    def vars(self) -> List[Dict[str, str]]:
         vars = []
         for match in rex_var.finditer(self.template):
             var = match.groupdict()
@@ -48,10 +52,19 @@ class License:
             vars.append(var)
         return vars
 
-    def make_text(self, **kwargs) -> str:
+    def make_text(self, *, wrap: bool = True, **kwargs) -> str:
         text = self.template
         for var in self.vars:
             value = kwargs.get(var['name'], var['original'])
             text = text.replace(var['text'], value)
-        text = rex_junk.sub('', text)
-        return text
+        text = rex_junk.sub('', text).strip()
+
+        if wrap:
+            wrapper = textwrap.TextWrapper(
+                width=78,
+                break_long_words=False,
+                replace_whitespace=False,
+            )
+            text = '\n'.join(wrapper.fill(line) for line in text.splitlines())
+
+        return text + '\n'
