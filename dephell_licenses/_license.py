@@ -1,4 +1,5 @@
 import re
+import textwrap
 from typing import Dict, Any, List
 
 import attr
@@ -51,10 +52,19 @@ class License:
             vars.append(var)
         return vars
 
-    def make_text(self, **kwargs) -> str:
+    def make_text(self, *, wrap: bool = True, **kwargs) -> str:
         text = self.template
         for var in self.vars:
             value = kwargs.get(var['name'], var['original'])
             text = text.replace(var['text'], value)
-        text = rex_junk.sub('', text)
-        return text
+        text = rex_junk.sub('', text).strip()
+
+        if wrap:
+            wrapper = textwrap.TextWrapper(
+                width=78,
+                break_long_words=False,
+                replace_whitespace=False,
+            )
+            text = '\n'.join(wrapper.fill(line) for line in text.splitlines())
+
+        return text + '\n'
