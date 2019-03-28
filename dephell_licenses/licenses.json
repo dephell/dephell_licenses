@@ -281,25 +281,25 @@
   {
     "approved": true,
     "classifier": "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
-    "deprecated": true,
-    "id": "AGPL-3.0",
+    "deprecated": false,
+    "id": "AGPL-3.0-or-later",
     "links": [
       "https://www.gnu.org/licenses/agpl.txt",
       "https://opensource.org/licenses/AGPL-3.0"
     ],
-    "name": "GNU Affero General Public License v3.0",
-    "url": "http://spdx.org/licenses/AGPL-3.0.json"
+    "name": "GNU Affero General Public License v3.0 or later",
+    "url": "http://spdx.org/licenses/AGPL-3.0-or-later.json"
   },
   {
     "approved": false,
     "classifier": "License :: OSI Approved :: GNU General Public License (GPL)",
     "deprecated": true,
-    "id": "GPL-1.0",
+    "id": "GPL-1.0+",
     "links": [
       "https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html"
     ],
-    "name": "GNU General Public License v1.0 only",
-    "url": "http://spdx.org/licenses/GPL-1.0.json"
+    "name": "GNU General Public License v1.0 or later",
+    "url": "http://spdx.org/licenses/GPL-1.0+.json"
   },
   {
     "approved": true,
@@ -317,12 +317,13 @@
     "approved": false,
     "classifier": "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
     "deprecated": true,
-    "id": "GPL-2.0-with-font-exception",
+    "id": "GPL-2.0+",
     "links": [
-      "https://www.gnu.org/licenses/gpl-faq.html#FontException"
+      "https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html",
+      "https://opensource.org/licenses/GPL-2.0"
     ],
-    "name": "GNU General Public License v2.0 w/Font exception",
-    "url": "http://spdx.org/licenses/GPL-2.0-with-font-exception.json"
+    "name": "GNU General Public License v2.0 or later",
+    "url": "http://spdx.org/licenses/GPL-2.0+.json"
   },
   {
     "approved": true,
@@ -340,13 +341,13 @@
     "approved": true,
     "classifier": "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "deprecated": true,
-    "id": "GPL-3.0",
+    "id": "GPL-3.0+",
     "links": [
       "https://www.gnu.org/licenses/gpl-3.0-standalone.html",
       "https://opensource.org/licenses/GPL-3.0"
     ],
-    "name": "GNU General Public License v3.0 only",
-    "url": "http://spdx.org/licenses/GPL-3.0.json"
+    "name": "GNU General Public License v3.0 or later",
+    "url": "http://spdx.org/licenses/GPL-3.0+.json"
   },
   {
     "approved": true,
@@ -363,14 +364,14 @@
   {
     "approved": true,
     "classifier": "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
-    "deprecated": true,
-    "id": "LGPL-2.1",
+    "deprecated": false,
+    "id": "LGPL-2.1-or-later",
     "links": [
       "https://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html",
       "https://opensource.org/licenses/LGPL-2.1"
     ],
-    "name": "GNU Lesser General Public License v2.1 only",
-    "url": "http://spdx.org/licenses/LGPL-2.1.json"
+    "name": "GNU Lesser General Public License v2.1 or later",
+    "url": "http://spdx.org/licenses/LGPL-2.1-or-later.json"
   },
   {
     "approved": true,
@@ -388,13 +389,24 @@
     "approved": true,
     "classifier": "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
     "deprecated": true,
-    "id": "LGPL-3.0",
+    "id": "LGPL-3.0+",
     "links": [
       "https://www.gnu.org/licenses/lgpl-3.0-standalone.html",
       "https://opensource.org/licenses/LGPL-3.0"
     ],
-    "name": "GNU Lesser General Public License v3.0 only",
-    "url": "http://spdx.org/licenses/LGPL-3.0.json"
+    "name": "GNU Lesser General Public License v3.0 or later",
+    "url": "http://spdx.org/licenses/LGPL-3.0+.json"
+  },
+  {
+    "approved": true,
+    "classifier": "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "deprecated": false,
+    "name": "GNU Library General Public License v2 or later",
+    "id": "LGPL-2.0-or-later",
+    "seeAlso": [
+      "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
+    ],
+    "url": "http://spdx.org/licenses/LGPL-2.0-or-later.json"
   },
   {
     "approved": true,
@@ -549,6 +561,17 @@
     "approved": true,
     "classifier": "License :: OSI Approved :: Python License (CNRI Python License)",
     "deprecated": false,
+    "id": "CNRI-Python",
+    "links": [
+      "https://opensource.org/licenses/CNRI-Python"
+    ],
+    "name": "CNRI Python License",
+    "url": "http://spdx.org/licenses/CNRI-Python.json"
+  },
+  {
+    "approved": true,
+    "classifier": "License :: OSI Approved :: Python Software Foundation License",
+    "deprecated": false,
     "id": "Python-2.0",
     "links": [
       "https://opensource.org/licenses/Python-2.0"
@@ -671,14 +694,15 @@
     "url": "http://spdx.org/licenses/zlib-acknowledgement.json"
   },
   {
-    "approved": false,
+    "approved": true,
     "classifier": "License :: OSI Approved :: Zope Public License",
     "deprecated": false,
-    "id": "ZPL-1.1",
+    "id": "ZPL-2.0",
     "links": [
-      "http://old.zope.org/Resources/License/ZPL-1.1"
+      "http://old.zope.org/Resources/License/ZPL-2.0",
+      "https://opensource.org/licenses/ZPL-2.0"
     ],
-    "name": "Zope Public License 1.1",
-    "url": "http://spdx.org/licenses/ZPL-1.1.json"
+    "name": "Zope Public License 2.0",
+    "url": "http://spdx.org/licenses/ZPL-2.0.json"
   }
 ]
