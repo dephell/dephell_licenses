@@ -1,4 +1,6 @@
 import re
+from typing import Dict, Any, List
+
 import attr
 import requests
 from cached_property import cached_property
@@ -24,23 +26,23 @@ class License:
     approved = attr.ib(type=bool)
     deprecated = attr.ib(type=bool)
 
-    links = attr.ib(type=tuple)
+    links = attr.ib(type=List[str])
     url = attr.ib(type=str)
 
     @cached_property
-    def _details(self):
+    def _details(self) -> Dict[str, Any]:
         return requests.get(self.url).json()
 
     @property
-    def template(self):
+    def template(self) -> str:
         return self._details['standardLicenseTemplate']
 
     @property
-    def comments(self):
+    def comments(self) -> str:
         return self._details['licenseComments']
 
     @cached_property
-    def vars(self):
+    def vars(self) -> List[Dict[str, str]]:
         vars = []
         for match in rex_var.finditer(self.template):
             var = match.groupdict()

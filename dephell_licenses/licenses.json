@@ -403,7 +403,7 @@
     "deprecated": false,
     "name": "GNU Library General Public License v2 or later",
     "id": "LGPL-2.0-or-later",
-    "seeAlso": [
+    "links": [
       "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
     ],
     "url": "http://spdx.org/licenses/LGPL-2.0-or-later.json"
