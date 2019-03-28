@@ -40,7 +40,7 @@ class Licenses:
         license = self._reverse_index_id.get(license_id)
         if license is not None:
             return license
-        license = self._reverse_index_cleaned_id.get(self._clean_id(license_id))
+        return self._reverse_index_cleaned_id.get(self._clean_id(license_id))
 
     def get_by_name(self, name) -> Optional[License]:
         for license in self.all:

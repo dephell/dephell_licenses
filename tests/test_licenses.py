@@ -9,3 +9,8 @@ def test_get_by_id():
 def test_get_by_classifier():
     license = licenses.get_by_classifier('License :: OSI Approved :: MIT License')
     assert license.id == 'MIT'
+
+
+def test_get_by_name():
+    license = licenses.get_by_name('MIT License')
+    assert license.id == 'MIT'
