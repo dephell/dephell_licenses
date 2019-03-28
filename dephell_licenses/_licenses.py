@@ -10,7 +10,7 @@ class Licenses:
     def all(self):
         path = Path(__file__).parent / 'licenses.json'
         licenses = json.loads(path.read_text(encoding='utf-8'))
-        return tuple(License(**license) for license in licenses)
+        return tuple(License(**license) for license in reversed(licenses))
 
     def get_by_classifier(self, name):
         for license in self.all:
