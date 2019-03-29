@@ -67,4 +67,7 @@ class License:
             )
             text = '\n'.join(wrapper.fill(line) for line in text.splitlines())
 
+        while '\n\n\n' in text:
+            text = text.replace('\n\n\n', '\n\n')
+
         return text + '\n'
