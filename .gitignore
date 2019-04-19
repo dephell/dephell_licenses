@@ -1,5 +1,9 @@
 .hypothesis/
 .pytest_cache/
+.mypy_cache/
+.tox
+.dephell_report/
+
 __pycache__/
 *.py[cod]
 

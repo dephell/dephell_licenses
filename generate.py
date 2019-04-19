@@ -15,10 +15,10 @@ def get_by_name(name):
     best_license = info[0]
     best_distance = float('Inf')
     for license in info:
-        d = hamming.normalized_distance(name, license['name'])
-        if d < best_distance:
+        distance = hamming.normalized_distance(name, license['name'])
+        if distance < best_distance:
             best_license = license
-            best_distance = d
+            best_distance = distance
     if best_distance < .90:
         return best_license
 
@@ -27,10 +27,10 @@ def get_by_fullname(name):
     best_license = info[0]
     best_distance = float('Inf')
     for license in info:
-        d = hamming.normalized_distance(name, license['name'] + ' ' + license['licenseId'])
-        if d < best_distance:
+        distance = hamming.normalized_distance(name, license['name'] + ' ' + license['licenseId'])
+        if distance < best_distance:
             best_license = license
-            best_distance = d
+            best_distance = distance
     if best_distance < .90:
         return best_license
 
@@ -46,10 +46,10 @@ def get_by_id(name):
     best_license = info[0]
     best_distance = float('Inf')
     for license in info:
-        d = hamming.distance(name, rex_clean.sub('', license['licenseId']))
-        if d < best_distance:
+        distance = hamming.distance(name, rex_clean.sub('', license['licenseId']))
+        if distance < best_distance:
             best_license = license
-            best_distance = d
+            best_distance = distance
     if best_distance <= 1:
         return best_license
 
