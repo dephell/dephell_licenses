@@ -1,7 +1,7 @@
 import json
 import re
 from pathlib import Path
-from typing import Tuple, Dict, Optional
+from typing import Tuple, Dict, Iterator, Optional
 
 from ._cached_property import cached_property
 from ._license import License
@@ -33,16 +33,16 @@ class Licenses:
 
     # getters
 
-    def get_by_classifier(self, classifier) -> Optional[License]:
+    def get_by_classifier(self, classifier: str) -> Optional[License]:
         return self._reverse_index_classifier.get(classifier)
 
-    def get_by_id(self, license_id) -> Optional[License]:
+    def get_by_id(self, license_id: str) -> Optional[License]:
         license = self._reverse_index_id.get(license_id)
         if license is not None:
             return license
         return self._reverse_index_cleaned_id.get(self._clean_id(license_id))
 
-    def get_by_name(self, name) -> Optional[License]:
+    def get_by_name(self, name: str) -> Optional[License]:
         for license in self.all:
             if license.name == name:
                 return license
@@ -56,3 +56,11 @@ class Licenses:
     @staticmethod
     def _clean_id(license_id: str) -> str:
         return rex_clean.sub('', license_id).replace('v', '')
+
+    # magic methods
+
+    def __iter__(self) -> Iterator[License, ...]:
+        yield from self.all
+
+    def __repr__(self) -> str:
+        return '{}()'.format(type(self).__name__)
