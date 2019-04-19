@@ -1,5 +1,11 @@
 # DepHell Licenses
 
+[![travis](https://travis-ci.org/dephell/dephell_licenses.svg?branch=master)](https://travis-ci.org/dephell/dephell_licenses)
+[![appveyor](https://ci.appveyor.com/api/projects/status/github/dephell/dephell_licenses?svg=true)](https://ci.appveyor.com/project/orsinium/dephell-licenses)
+[![MIT License](https://img.shields.io/pypi/l/dephell-licenses.svg)](https://github.com/dephell/dephell_licenses/blob/master/LICENSE)
+
+Manage OSS licenses: retrieve information, generate.
+
 ## Installation
 
 Install from [PyPI](https://pypi.org/project/dephell-licenses/):
