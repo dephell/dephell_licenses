@@ -59,7 +59,7 @@ class Licenses:
 
     # magic methods
 
-    def __iter__(self) -> Iterator[License, ...]:
+    def __iter__(self) -> Iterator[License]:
         yield from self.all
 
     def __repr__(self) -> str:

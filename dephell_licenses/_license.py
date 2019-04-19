@@ -14,7 +14,7 @@ rex_var = re.compile(
     r'<<var;'
     r'name="?(?P<name>[a-zA-Z0-9]+)"?;'
     r'original="?(?P<original>.+?)"?;'
-    r'match="?(?P<match>.+?)"?>>'
+    r'match="?(?P<match>.+?)"?>>'   # noQA: C812
 )
 rex_junk = re.compile(r'<<.+?>>')
 
