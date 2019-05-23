@@ -19,7 +19,7 @@ command = "mypy --ignore-missing-imports --allow-redefinition dephell_licenses"
 
 [tool.poetry]
 name = "dephell-licenses"
-version = "0.1.5"
+version = "0.1.6"
 authors = ["Gram <master_fess@mail.ru>"]
 description = "Get info about OSS licenses"
 readme = "README.md"
