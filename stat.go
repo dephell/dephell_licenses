@@ -18,6 +18,7 @@ const searchURL = "https://pypi.org/search/?q=&o=&c="
 var wg = sync.WaitGroup{}
 
 func search(classifier string) {
+	defer wg.Done()
 	doc, err := htmlquery.LoadURL(searchURL + url.QueryEscape(classifier))
 	if err != nil {
 		log.Fatalln(err)
@@ -26,7 +27,6 @@ func search(classifier string) {
 	node := htmlquery.FindOne(doc, `//*[@id="content"]/section/div/div[2]/form/section[1]/div[1]/p/strong`)
 	count := strings.Replace(htmlquery.InnerText(node), ",", "", -1)
 	fmt.Println(classifier, "|", count)
-	wg.Done()
 }
 
 func main() {
