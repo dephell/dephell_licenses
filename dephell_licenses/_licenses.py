@@ -31,6 +31,16 @@ class Licenses:
     def _reverse_index_cleaned_id(self) -> Dict[str, License]:
         return {self._clean_id(license.id): license for license in self.all}
 
+    @cached_property
+    def _reverse_index_cleaned_name(self) -> Dict[str, License]:
+        result = dict()
+        for license in self.all:
+            name = license.classifier.split(' :: ')[-1]
+            result[self._clean_name(name)] = license
+        for license in self.all:
+            result[self._clean_name(license.name)] = license
+        return result
+
     # getters
 
     def get_by_classifier(self, classifier: str) -> Optional[License]:
@@ -43,19 +53,23 @@ class Licenses:
         return self._reverse_index_cleaned_id.get(self._clean_id(license_id))
 
     def get_by_name(self, name: str) -> Optional[License]:
-        for license in self.all:
-            if license.name == name:
-                return license
-        for license in self.all:
-            if license.classifier.split(' :: ')[-1] == name:
-                return license
+        license = self._reverse_index_cleaned_name.get(self._clean_name(name))
+        if license is not None:
+            return license
+        license = self.get_by_id(name)
+        if license is not None:
+            return license
         return None
 
     # private methods
 
     @staticmethod
     def _clean_id(license_id: str) -> str:
-        return rex_clean.sub('', license_id).replace('v', '')
+        return rex_clean.sub('', license_id.replace('.0', '')).replace('v', '').lower()
+
+    @classmethod
+    def _clean_name(cls, license_name: str) -> str:
+        return cls._clean_id(license_name).replace('license', '').strip()
 
     # magic methods
 
