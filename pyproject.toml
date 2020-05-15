@@ -20,7 +20,7 @@ command = "mypy --ignore-missing-imports --allow-redefinition dephell_licenses"
 
 [tool.poetry]
 name = "dephell-licenses"
-version = "0.1.6"
+version = "0.1.7"
 authors = ["Gram <gram@orsinium.dev>"]
 description = "Get info about OSS licenses"
 readme = "README.md"
