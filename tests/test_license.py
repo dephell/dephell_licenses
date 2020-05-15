@@ -8,4 +8,4 @@ def test_make_text():
     assert 'beginOptional' not in license.make_text()
     assert license.make_text().strip().startswith('MIT License')
 
-    assert 'Copyright (c) 2018 Gram' in license.make_text(copyright='2018 Gram')
+    assert 'MIT License 2018 Gram' in license.make_text(copyright='2018 Gram')
